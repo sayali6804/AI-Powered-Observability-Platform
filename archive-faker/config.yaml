@@ -1,0 +1,19 @@
+etlBaseDir: "c:/mnt/data/etl"
+archiveBaseDir: "c:/mnt/data/archive"
+scanInterval: 10s
+processingDelayMin: 2s
+processingDelayMax: 8s
+failureRate: 0.02
+maxConcurrentFiles: 100
+types:
+  - email
+  - chat
+  - voice
+sources:
+  email:
+    - journal
+    - non-journal
+  chat:
+    - bloomberg
+  voice:
+    - bloomberg
