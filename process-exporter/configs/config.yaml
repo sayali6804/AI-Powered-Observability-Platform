@@ -1,0 +1,13 @@
+processes:
+  - name: das
+    pattern: "das-faker.exe"
+  - name: etl
+    pattern: "etl-faker.exe"
+  - name: archive
+    pattern: "archive-faker.exe"
+  - name: index
+    pattern: "index-faker.exe"    
+ 
+system:
+  collect_cpu: true
+  collect_memory: true
