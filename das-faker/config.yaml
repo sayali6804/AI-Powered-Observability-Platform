@@ -1,0 +1,19 @@
+baseDir: "c:/mnt/data/das"
+fileGenerationRate: 10
+processingDelayMin: 2s
+processingDelayMax: 10s
+failureRate: 0.02
+types:
+  - email
+  - chat
+  - voice
+sources:
+  email:
+    - journal
+    - non-journal
+  chat:
+    - bloomberg
+  voice:
+    - bloomberg
+filesPerBatch: 5
+maxConcurrentFiles: 10
